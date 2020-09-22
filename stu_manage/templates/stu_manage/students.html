@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% extends "stu_manage/base.html" %}
+
+{% block content %}
+    <p>学生名单：</p>
+
+        <ul>
+            {% for each in stu %}
+                <li>{{ each }}</li>
+            {% empty %}
+                <li>目前数据库中没有学生信息</li>
+            {% endfor %}
+        </ul>
+{% endblock %}
+
+</body>
+</html>

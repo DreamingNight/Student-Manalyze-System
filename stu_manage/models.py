@@ -25,7 +25,7 @@ class Student(models.Model):
     GENDER_CHOICE = ((MALE, '男'), (FEMALE, '女'))
     stu_gender = models.CharField(max_length=10, choices=GENDER_CHOICE, verbose_name='性别')
     GRADE_CHOICE = (('1', '高一'), ('2', '高二'), ('3', '高三'))
-    stu_grade = models.CharField(max_length=2, choices=GENDER_CHOICE, verbose_name='年级')
+    stu_grade = models.CharField(max_length=10, choices=GENDER_CHOICE, verbose_name='年级')
 
     
     # date_added = models.DateTimeField(auto_now_add=True)
